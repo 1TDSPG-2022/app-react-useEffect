@@ -37,7 +37,7 @@ export default function App() {
             <div>
                 <h2>Respositórios</h2>
                 <ul>
-                    {repositorios.map((repo,i))} =>
+                    {repositorios.map((repo,i))} =
                         <li key={i}>{repo.name}</li>
                     )
                 </ul>
