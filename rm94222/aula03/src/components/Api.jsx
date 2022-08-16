@@ -1,10 +1,11 @@
 import React from "react"
 import Api from "./api"
 
-export default function App(){
+export default function Api(props){
     return
     <div>
-        <h1>Inicioa de Repositórios</h1>
+        <h2>Api</h2>
+        <div>{props.children[1]}</div>
     </div>
 
 }
