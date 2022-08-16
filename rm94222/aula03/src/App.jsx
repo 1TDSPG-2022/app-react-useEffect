@@ -20,6 +20,8 @@ export default function App() {
                 <p>Listas</p>
                 <h1>Classes</h1>
             </Api>
+            <p>Valor de State = {vaorState}</p>
+            <button onClick={() => setValorState(valor + 1)} > AUMENTAR</button>
         </div>
     )
 }
