@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
-import Api from "./components/Api/Api"
+import React, { useState } from 'react';
+import {useEffect} from 'react';
+import Api from './components/Api'
 
 export default function App() {
 
@@ -9,9 +9,6 @@ export default function App() {
     const [valorState, setvalorState] = useState()
 
     useEffectSnippet
-
-
-    
     
     return (
         <div>
