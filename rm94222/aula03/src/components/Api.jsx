@@ -1,5 +1,5 @@
 import React from "react"
-import Api from "./api"
+import Api from "../components/Api"
 
 export default function Api(props){
     return
