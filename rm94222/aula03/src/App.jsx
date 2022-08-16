@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import {useEffect} from 'react';
-import Api from './components/Api'
+import {useEffect} from "react"
+import Api from "./components/api/Api"
 
 export default function App() {
 
     useStateSnippet
+
 
     const [valorState, setvalorState] = useState()
 
