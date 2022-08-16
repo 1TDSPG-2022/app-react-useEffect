@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Api(props){
+export default function Api(props) {
     return (
         <div>
             <h2>Api</h2>

@@ -15,11 +15,11 @@ export default function App() {
         <div>
             <h1>Iniciona dos Estudos com useEffect</h1>
 
-            <api>
+            <Api>
                 <h2>Lista de Repositorios do GitHub</h2>
                 <p>Listas</p>
                 <h1>Classes</h1>
-            </api>
+            </Api>
         </div>
     )
 }
