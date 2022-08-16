@@ -6,5 +6,4 @@ export default function Api(props){
         <h2>Api</h2>
         <div>{props.children[1]}</div>
     </div>
-
 }
