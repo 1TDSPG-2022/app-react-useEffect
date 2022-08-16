@@ -8,6 +8,8 @@ export default function App() {
 
     const [valorState, setvalorState] = useState()
 
+    useEffect
+
     
     
     return (
