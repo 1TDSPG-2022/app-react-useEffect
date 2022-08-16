@@ -1,19 +1,19 @@
-import React from 'react';
-import React, { useState } from 'react';
 import React, { useEffect } from 'react';
 import Api from "./components/api/Api"
 
 export default function App() {
 
-    useStateSnippet
-
-
     const [valorState, setvalorState] = useState()
 
-    useEffect
+    useEffect(() => {
+        first
 
+        return () => {
+            second
+        }
+    },[tird])
 
-    
+   
     return (
         <div>
             <h1>Iniciona dos Estudos com useEffect</h1>
