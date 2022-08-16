@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from "react"
 import Api from "./components/api/Api"
 
 export default function App() {
@@ -6,12 +6,9 @@ export default function App() {
     const [valorState, setvalorState] = useState()
 
     useEffect(() => {
-        first
-
-        return () => {
-            second
-        }
-    },[tird])
+        console.log('Renderizou!')
+        
+    }, [valorState])
 
    
     return (
