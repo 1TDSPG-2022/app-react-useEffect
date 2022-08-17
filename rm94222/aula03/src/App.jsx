@@ -9,7 +9,7 @@ export default function App() {
         console.log('Renderizou!')
     }, [valorState])
 
-    const[repositorios, setRepositorios] = useState (second)
+    const[repositorios, setRepositorios] = useState ()
 
     useEffect(async () => {
         const response = await fetch("")
