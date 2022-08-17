@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Api from "./components/api/Api"
+import './index.css'
 
 export default function App() {
 
