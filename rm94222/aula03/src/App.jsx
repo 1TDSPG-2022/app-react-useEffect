@@ -7,8 +7,17 @@ export default function App() {
 
     useEffect(() => {
         console.log('Renderizou!')
-        
     }, [valorState])
+
+    const[repositorios, setRepositorios] = useState (second)
+
+    useEffect(async () => {
+        const response = await fetch("")
+        const data = await response.json()
+
+        setRepositorios(data)
+    }, [])
+    
 
    
     return (
@@ -20,8 +29,17 @@ export default function App() {
                 <p>Listas</p>
                 <h1>Classes</h1>
             </Api>
-            <p>Valor de State = {vaorState}</p>
-            <button onClick={() => setValorState(valor + 1)} > AUMENTAR</button>
+            <p>Valor de State = {valorState}</p>
+            <button onClick={() => setvalorState(valorState + 1)} > AUMENTAR</button>
+
+            <div>
+                <h2>Repositórios</h2>
+                <ul>
+                    {repositorios.map((repo,i) =>
+                        <li key={i}>{repo.name.title}</li>
+                    )}
+                </ul>
+            </div>
         </div>
     )
 }
