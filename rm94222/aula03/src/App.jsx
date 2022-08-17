@@ -1,46 +1,47 @@
 import React, { useEffect, useState } from "react"
 import Api from "./components/api/Api"
-import './index.css'
 
 export default function App() {
 
-    const [valorState, setvalorState] = useState()
+    const [valorState, setvalorState] = useState(0)
 
     useEffect(() => {
         console.log('Renderizou!')
     }, [valorState])
 
-    const[repositorios, setRepositorios] = useState ()
+
+    const [repositorios, setRepositorios] = useState([])
 
     useEffect(async () => {
-        const response = await fetch("")
+
+        const response = await fetch("https://api.github.com/users/alecarlosjesus/repos")
         const data = await response.json()
 
         setRepositorios(data)
-    }, [])
-    
 
-   
+    }, [])
+
     return (
         <div>
-            <h1>Iniciona dos Estudos com useEffect</h1>
+            <h1>Início dos Estudos com useEffects</h1>
 
             <Api>
-                <h2>Lista de Repositorios do GitHub</h2>
+                <h2>Lista de Repositórios do GitHUB</h2>
                 <p>Listas</p>
                 <h1>Classes</h1>
             </Api>
             <p>Valor de State = {valorState}</p>
-            <button onClick={() => setvalorState(valorState + 1)} > AUMENTAR</button>
+            <button onClick={() => setvalorState(valorState + 1)}>AUMENTAR</button>
 
             <div>
                 <h2>Repositórios</h2>
                 <ul>
-                    {repositorios.map((repo,i) =>
-                        <li key={i}>{repo.name.title}</li>
+                    {repositorios.map((repo, i) =>
+                        <li key={i}>{repo.name}</li>
                     )}
                 </ul>
             </div>
+
         </div>
     )
 }
