@@ -2,3 +2,14 @@ body{
     background-color: #0a0606;
     color: #fff;
 }
+h1,h2{
+    color: red;
+    text-decoration: underline;
+}
+p{
+    color: yellow;
+}
+img{
+    width: 500px;
+    height: 250px;
+}
